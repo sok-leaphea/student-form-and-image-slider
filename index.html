@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider & Student Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="slider-container">
+        <h1>Image Slider</h1>
+        <div class="slider">
+            <button id="prev-button">Prev</button>
+            <img src="./images/01.jpg" alt="cat" id="slider-image" />
+            <button id="next-button">Next</button>
+        </div>
+    </div>
+
+    <div class="form-container">
+        <h1>Student Form</h1>
+        <form id="student-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" />
+
+            <label for="gender">Gender:</label>
+            <div class="gender-options">
+                <input type="radio" name="gender" id="male" value="Male" /> Male
+                <input type="radio" name="gender" id="female" value="Female" /> Female
+            </div>
+
+            <label for="group">Group:</label>
+            <select id="group">
+                <option value="E1">E1</option>
+                <option value="E2">E2</option>
+                <option value="E3">E3</option>
+                <option value="E4">E4</option>
+                <option value="E5">E5</option>
+                <option value="E6">E6</option>
+                <option value="E7">E7</option>
+            </select>
+
+            <label for="web">Web:</label>
+            <input type="text" id="web" />
+
+            <label for="ooad">OOAD:</label>
+            <input type="text" id="ooad" />
+
+            <label for="mis">MIS:</label>
+            <input type="text" id="mis" />
+
+            <label for="linux">Linux:</label>
+            <input type="text" id="linux" />
+
+            <label for="se">SE:</label>
+            <input type="text" id="se" />
+
+            <button type="button">Add</button>
+        </form>
+
+        <table id="grades-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Sex</th>
+                    <th>Class</th>
+                    <th>Web</th>
+                    <th>OOAD</th>
+                    <th>MIS</th>
+                    <th>Linux</th>
+                    <th>SE</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
